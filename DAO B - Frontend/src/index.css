@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  font-family: 'Roboto', sans-serif;
+}
+
+.route-active{
+  @apply transition-all bg-black text-white;
+}
+
+.route-border-active{
+  @apply border-[1px] border-white;
+}
+  
+.custom_datepick{
+  @apply text-sm border-0 outline-none w-full;
+}
+
+
+.slide-enter,
+.slide-exit {
+  transition: all 1000ms ease-in;
+}
+
+.slide-enter {
+  opacity: .7;
+}
+
+.slide-enter.slide-enter-active {
+  opacity: 1;
+}
+
+
+.Dropdown-control{
+  padding: .3rem 0 !important;
+  border: none !important;
+}
+
+.react-tabs__tab--selected{
+  border: 0;
+  border-color: black !important;
+  background: none !important;
+  border-bottom: 3px solid;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+
+/* .react-datepicker__input-container input{
+  border: 1px solid rgba(128, 128, 128, 0.363);
+  border-radius: .4rem;
+  padding: 1.2rem 1rem;
+  font-size: .9rem;
+  width: 400px;
+} */
+
+/* @media only screen and (max-width: 600px){
+  .react-datepicker__input-container input{
+    width: 320px;
+  }
+} */
